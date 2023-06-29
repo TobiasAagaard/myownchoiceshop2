@@ -1,0 +1,29 @@
+{
+  "name": "myownchoiceshop2",
+  "version": "1.0.0",
+  "description": "this is a shop api that me and Rasmus has worked on ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiasAagaard/myownchoiceshop2.git"
+  },
+  "author": "Rasmus Krogsgaard and Tobias Aagaard Christiansen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TobiasAagaard/myownchoiceshop2/issues"
+  },
+  "homepage": "https://github.com/TobiasAagaard/myownchoiceshop2#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.2",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
