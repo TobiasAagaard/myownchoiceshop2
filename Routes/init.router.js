@@ -3,11 +3,14 @@ import { sequelize } from "../configs/sequelize.config"
 
 const InitRouter = express.Router();
 
-try {
-    await sequelize.authenticate();
-    console.log("connection is established")
-} catch (error) {
-    console.error("not established")
-}
+InitRouter.get('/init', (req, res) => {
+    try {
+        sequelize.sync()
+        res.sendStatus(200)
+    }
+    catch(err) {
+        res.send(err)
+    }
+})
 
 export default InitRouter
